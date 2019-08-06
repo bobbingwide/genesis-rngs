@@ -1,3 +1,44 @@
 /* (C) Copyright Bobbing Wide 2011-2019 */
 /* custom.css for Royal Navy Golfing Society */
 /* Needed to prevent Gutenberg from throwing a wobbler? */
+
+.sd-content ul>li:before { content: none; }
+input, select, textarea, a.art-search-button span
+{
+    text-transform: none;
+}
+
+.textwidget span.company { font-size: 250%; margin-top: 20px; display: block; }
+span.company { font-weight: bold; }
+img.bw_logo { max-height: 84px; }
+
+/* .art-header {border: 8px solid #93CC61; } removed 2014/07/29 */
+.art-headline { margin-left: -335px !important; }
+
+@media screen and ( max-width: 1024px ) {
+    .textwidget span.company { font-size: 240%; margin-top: 20px; display: block;  margin-left: -100px;}
+    .art-headline { margin-left: -272px !important; }
+}
+@media screen and ( max-width: 768px ) {
+    .textwidget span.company { font-size: 240%; margin-top: 0px; display: block;  margin-left: 0px;}
+
+}
+@media screen and ( max-width: 480px ) {
+    .textwidget span.company { font-size: 180%; margin-top: 0px; display: block;  margin-left: 0px;}
+}
+
+div.welcome { background: rgba(150, 173, 88, 0.8); margin-top: 10%; margin-bottom: 10%; font-size: 120%;
+    padding-top: 5%; padding-bottom: 5%; color: #222222; }
+
+/* div.new { background: #e6e6e6; margin-top: 5%; margin-bottom: 5%; padding-top: 2%; padding-bottom: 2%; } */
+div.new { background: rgba( 173, 200, 93, 0.7 ); margin-top: 5%; margin-bottom: 5%; padding-top: 2%; padding-bottom: 2%;
+    padding-left: 3%; }
+div.news div { background: #ffffff; padding: 5px 0 0 5px; margin-bottom: 2px; }
+
+.art-postcontent a:visited, .art-postcontent a.visited { color: #76B93C; }
+.art-postcontent a:hover, .art-postcontent a:hover { color: #355430; }
+
+.footer-widgets {
+    background: url(images/striped-header.jpg) no-repeat right top;
+    background-size: cover;
+}

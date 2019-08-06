@@ -1,4 +1,4 @@
-=== genesis-srab ===
+=== genesis-rngs ===
 Contributors: bobbingwide
 Donate link: http://www.oik-plugins.com/oik/oik-donate/
 Tags: genesis, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments
@@ -8,11 +8,11 @@ Version: 0.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Genesis Child Theme for Solenr Roofing and Building
+Genesis Child Theme for Royal Navy Golfing Society
 
 == Description ==
-genesis-srab is a child theme for the Genesis Theme Framework. 
-Implemented on solentroofingandbuilding.co.uk
+genesis-rngs is a child theme for the Genesis Theme Framework. 
+Implemented on rngs.org.uk
 
 - Displays logo in the header
 - Main menu in the header menu
@@ -23,21 +23,22 @@ Implemented on solentroofingandbuilding.co.uk
 == Installation ==
 
 1. Purchase and Install the Genesis parent theme
-2. Download the genesis-srab child theme
-3. Install the genesis-srab child theme
-4. Activate the genesis-srab child theme
+2. Download the genesis-rngs child theme
+3. Install the genesis-rngs child theme
+4. Activate the genesis-rngs child theme
 5. Navigate to Appearance > Customize in your admin panel and customize to taste.
 6. Navigate to Genesis > Theme Settings to set other options
 7. Optionally, install and activate a range of oik-based plugins.
 
 == Change Log ==
 = 0.0.1 = 
-* Added: Based on genesis-sample 3.0.1 with styling to appear like an Avada theme.
-* Changed: Copied and cobbled some logic from genesis-hm
+* Added: Based on genesis-srab
+* Changed: Colours
+* Added: Logic copied from the original theme
 
 == Copyright ==
 
-genesis-srab (C) Copyright Bobbing Wide 2019
+genesis-rngs (C) Copyright Bobbing Wide 2019
  
 
 This program is free software: you can redistribute it and/or modify
@@ -50,7 +51,7 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
-genesis-srab does not bundle third-party resources:
+genesis-rngs does not bundle third-party resources:
 
 == Notes ==
 
