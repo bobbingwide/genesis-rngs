@@ -176,7 +176,7 @@ textarea:focus,
 }
 
 a {
-	color: #0073e5;
+	color: #76b93c;
 	text-decoration: underline;
 	transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
@@ -449,7 +449,7 @@ input[type="submit"]:hover,
 .site-container div.wpforms-container-full .wpforms-form button[type="submit"]:hover,
 .button:focus,
 .button:hover {
-	background-color: #0073e5;
+	background-color: #76b93c;
 	border-width: 0;
 	color: #fff;
 }
@@ -703,7 +703,7 @@ th:last-child {
 
 .entry-title a:focus,
 .entry-title a:hover {
-	color: #0073e5;
+	color: #76b93c;
 }
 
 .widget-title {
@@ -891,7 +891,7 @@ img.alignright,
 .gs-faq__question:focus,
 .gs-faq__question:hover {
 	background: transparent;
-	color: #0073e5;
+	color: #76b93c;
 }
 
 .gs-faq__question::after {
@@ -1067,7 +1067,7 @@ img.alignright,
 .genesis-nav-menu .sub-menu .current-menu-item > a:focus,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
 	color: #ffffff;
-	background-color: #5f5d89;
+	background-color: #76b93c;
 	text-decoration: none;
 }
 
@@ -1097,12 +1097,12 @@ img.alignright,
 .genesis-nav-menu .menu-item:focus,
 .genesis-nav-menu .menu-item:hover {
 	position: relative;
-	background-color: #5f5d89;
+	background-color: #76b93c;
 }
 
 .genesis-nav-menu .sub-menu a:focus,
 .genesis-nav-menu .sub-menu a:hover {
-	background-color: #5f5d89;
+	background-color: #76b93c;
 }
 
 .genesis-nav-menu .menu-item:hover > .sub-menu {
@@ -1151,7 +1151,7 @@ img.alignright,
 .sub-menu-toggle:hover {
 	background-color: transparent;
 	border-width: 0;
-	color: #0073e5;
+	color: #76b93c;
 }
 
 .menu-toggle {
@@ -1522,7 +1522,7 @@ p.entry-meta {
 
 	.genesis-nav-menu > .menu-highlight > a:focus,
 	.genesis-nav-menu > .menu-highlight > a:hover {
-		background-color: #0073e5;
+		background-color: #76b93c;
 	}
 
 	.genesis-nav-menu .sub-menu,
