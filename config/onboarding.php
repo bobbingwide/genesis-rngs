@@ -1,10 +1,10 @@
 <?php
 /**
- * Genesis Solent Roofing and Building.
+ * Genesis Royal Navy Golfing Society.
  *
  * Onboarding config to load plugins and homepage content on theme activation.
  *
- * @package Genesis Solent Roofing and Building
+ * @package Genesis Royal Navy Golfing Society
  * @author  StudioPress
  * @license GPL-2.0-or-later
  * @link    https://www.studiopress.com/
@@ -14,22 +14,22 @@ return array(
 	'dependencies'     => array(
 		'plugins' => array(
 			array(
-				'name'       => __( 'Atomic Blocks', 'genesis-srab' ),
+				'name'       => __( 'Atomic Blocks', 'genesis-rngs' ),
 				'slug'       => 'atomic-blocks/atomicblocks.php',
 				'public_url' => 'https://atomicblocks.com/',
 			),
 			array(
-				'name'       => __( 'Simple Social Icons', 'genesis-srab' ),
+				'name'       => __( 'Simple Social Icons', 'genesis-rngs' ),
 				'slug'       => 'simple-social-icons/simple-social-icons.php',
 				'public_url' => 'https://wordpress.org/plugins/simple-social-icons/',
 			),
 			array(
-				'name'       => __( 'Genesis eNews Extended (Third Party)', 'genesis-srab' ),
+				'name'       => __( 'Genesis eNews Extended (Third Party)', 'genesis-rngs' ),
 				'slug'       => 'genesis-enews-extended/plugin.php',
 				'public_url' => 'https://wordpress.org/plugins/genesis-enews-extended/',
 			),
 			array(
-				'name'       => __( 'WPForms Lite (Third Party)', 'genesis-srab' ),
+				'name'       => __( 'WPForms Lite (Third Party)', 'genesis-rngs' ),
 				'slug'       => 'wpforms-lite/wpforms.php',
 				'public_url' => 'https://wordpress.org/plugins/wpforms-lite/',
 			),

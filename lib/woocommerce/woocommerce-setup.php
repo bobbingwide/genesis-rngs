@@ -1,10 +1,10 @@
 <?php
 /**
- * Genesis Solent Roofing and Building.
+ * Genesis Royal Navy Golfing Society.
  *
- * This file adds the required WooCommerce setup functions to the Genesis Solent Roofing and Building Theme.
+ * This file adds the required WooCommerce setup functions to the Genesis Royal Navy Golfing Society Theme.
  *
- * @package Genesis Solent Roofing and Building
+ * @package Genesis Royal Navy Golfing Society
  * @author  StudioPress
  * @license GPL-2.0-or-later
  * @link    https://www.studiopress.com/
@@ -19,7 +19,7 @@ if ( class_exists( 'WooCommerce' ) ) {
 
 }
 
-add_filter( 'woocommerce_style_smallscreen_breakpoint', 'genesis_srab_woocommerce_breakpoint' );
+add_filter( 'woocommerce_style_smallscreen_breakpoint', 'genesis_rngs_woocommerce_breakpoint' );
 /**
  * Modifies the WooCommerce breakpoints.
  *
@@ -27,7 +27,7 @@ add_filter( 'woocommerce_style_smallscreen_breakpoint', 'genesis_srab_woocommerc
  *
  * @return string Pixel width of the theme's breakpoint.
  */
-function genesis_srab_woocommerce_breakpoint() {
+function genesis_rngs_woocommerce_breakpoint() {
 
 	$current = genesis_site_layout( false );
 	$layouts = array(
@@ -45,7 +45,7 @@ function genesis_srab_woocommerce_breakpoint() {
 
 }
 
-add_filter( 'genesiswooc_products_per_page', 'genesis_srab_default_products_per_page' );
+add_filter( 'genesiswooc_products_per_page', 'genesis_rngs_default_products_per_page' );
 /**
  * Sets the default products per page.
  *
@@ -53,13 +53,13 @@ add_filter( 'genesiswooc_products_per_page', 'genesis_srab_default_products_per_
  *
  * @return int Number of products to show per page.
  */
-function genesis_srab_default_products_per_page() {
+function genesis_rngs_default_products_per_page() {
 
 	return 8;
 
 }
 
-add_filter( 'woocommerce_pagination_args', 'genesis_srab_woocommerce_pagination' );
+add_filter( 'woocommerce_pagination_args', 'genesis_rngs_woocommerce_pagination' );
 /**
  * Updates the next and previous arrows to the default Genesis style.
  *
@@ -68,22 +68,22 @@ add_filter( 'woocommerce_pagination_args', 'genesis_srab_woocommerce_pagination'
  *
  * @return array New next and previous text arguments.
  */
-function genesis_srab_woocommerce_pagination( $args ) {
+function genesis_rngs_woocommerce_pagination( $args ) {
 
-	$args['prev_text'] = sprintf( '&laquo; %s', __( 'Previous Page', 'genesis-srab' ) );
-	$args['next_text'] = sprintf( '%s &raquo;', __( 'Next Page', 'genesis-srab' ) );
+	$args['prev_text'] = sprintf( '&laquo; %s', __( 'Previous Page', 'genesis-rngs' ) );
+	$args['next_text'] = sprintf( '%s &raquo;', __( 'Next Page', 'genesis-rngs' ) );
 
 	return $args;
 
 }
 
-add_action( 'after_switch_theme', 'genesis_srab_woocommerce_image_dimensions_after_theme_setup', 1 );
+add_action( 'after_switch_theme', 'genesis_rngs_woocommerce_image_dimensions_after_theme_setup', 1 );
 /**
  * Defines WooCommerce image sizes on theme activation.
  *
  * @since 2.3.0
  */
-function genesis_srab_woocommerce_image_dimensions_after_theme_setup() {
+function genesis_rngs_woocommerce_image_dimensions_after_theme_setup() {
 
 	global $pagenow;
 
@@ -92,11 +92,11 @@ function genesis_srab_woocommerce_image_dimensions_after_theme_setup() {
 		return;
 	}
 
-	genesis_srab_update_woocommerce_image_dimensions();
+	genesis_rngs_update_woocommerce_image_dimensions();
 
 }
 
-add_action( 'activated_plugin', 'genesis_srab_woocommerce_image_dimensions_after_woo_activation', 10, 2 );
+add_action( 'activated_plugin', 'genesis_rngs_woocommerce_image_dimensions_after_woo_activation', 10, 2 );
 /**
  * Defines the WooCommerce image sizes on WooCommerce activation.
  *
@@ -104,14 +104,14 @@ add_action( 'activated_plugin', 'genesis_srab_woocommerce_image_dimensions_after
  *
  * @param string $plugin The path of the plugin being activated.
  */
-function genesis_srab_woocommerce_image_dimensions_after_woo_activation( $plugin ) {
+function genesis_rngs_woocommerce_image_dimensions_after_woo_activation( $plugin ) {
 
 	// Checks to see if WooCommerce is being activated.
 	if ( 'woocommerce/woocommerce.php' !== $plugin ) {
 		return;
 	}
 
-	genesis_srab_update_woocommerce_image_dimensions();
+	genesis_rngs_update_woocommerce_image_dimensions();
 
 }
 
@@ -120,7 +120,7 @@ function genesis_srab_woocommerce_image_dimensions_after_woo_activation( $plugin
  *
  * @since 2.3.0
  */
-function genesis_srab_update_woocommerce_image_dimensions() {
+function genesis_rngs_update_woocommerce_image_dimensions() {
 
 	// Updates image size options.
 	update_option( 'woocommerce_single_image_width', 655 );    // Single product image.
@@ -131,7 +131,7 @@ function genesis_srab_update_woocommerce_image_dimensions() {
 
 }
 
-add_filter( 'woocommerce_get_image_size_gallery_thumbnail', 'genesis_srab_gallery_image_thumbnail' );
+add_filter( 'woocommerce_get_image_size_gallery_thumbnail', 'genesis_rngs_gallery_image_thumbnail' );
 /**
  * Filters the WooCommerce gallery image dimensions.
  *
@@ -140,7 +140,7 @@ add_filter( 'woocommerce_get_image_size_gallery_thumbnail', 'genesis_srab_galler
  * @param array $size The gallery image size and crop arguments.
  * @return array The modified gallery image size and crop arguments.
  */
-function genesis_srab_gallery_image_thumbnail( $size ) {
+function genesis_rngs_gallery_image_thumbnail( $size ) {
 
 	$size = array(
 		'width'  => 180,

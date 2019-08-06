@@ -6,18 +6,18 @@
  *
  * Visit `/wp-admin/admin.php?page=genesis-getting-started` to trigger import.
  *
- * @package Genesis Solent Roofing and Building
+ * @package Genesis Royal Navy Golfing Society
  * @author  StudioPress
  * @license GPL-2.0-or-later
  * @link    https://www.studiopress.com/
  */
 
 // Photo by Felipe Dolce on Unsplash.
-$genesis_srab_landing_image_url = CHILD_URL . '/config/import/images/landing.jpg';
+$genesis_rngs_landing_image_url = CHILD_URL . '/config/import/images/landing.jpg';
 
 return <<<CONTENT
 <!-- wp:image {"id":1377} -->
-<figure class="wp-block-image"><img src="$genesis_srab_landing_image_url" alt="Paris" class="wp-image-1377"/><figcaption> Photo by <a href="https://unsplash.com/photos/Pi3YUQivm6o" target="_blank" rel="noreferrer noopener" aria-label=" (opens in a new tab)">Felipe Dolce</a> on <a href="https://unsplash.com/">Unsplash</a> </figcaption></figure>
+<figure class="wp-block-image"><img src="$genesis_rngs_landing_image_url" alt="Paris" class="wp-image-1377"/><figcaption> Photo by <a href="https://unsplash.com/photos/Pi3YUQivm6o" target="_blank" rel="noreferrer noopener" aria-label=" (opens in a new tab)">Felipe Dolce</a> on <a href="https://unsplash.com/">Unsplash</a> </figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -33,7 +33,7 @@ return <<<CONTENT
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":4} -->
-<h4>This is a Solent Roofing and Building Heading</h4>
+<h4>This is a Royal Navy Golfing Society Heading</h4>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->

@@ -1,12 +1,12 @@
 <?php
 /**
- * Genesis Solent Roofing and Building.
+ * Genesis Royal Navy Golfing Society.
  *
  * Block example page content optionally installed after theme activation.
  *
  * Visit `/wp-admin/admin.php?page=genesis-getting-started` to trigger import.
  *
- * @package Genesis Solent Roofing and Building
+ * @package Genesis Royal Navy Golfing Society
  * @author  StudioPress
  * @license GPL-2.0-or-later
  * @link    https://www.studiopress.com/

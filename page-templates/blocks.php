@@ -1,12 +1,12 @@
 <?php
 /**
- * Genesis Solent Roofing and Building.
+ * Genesis Royal Navy Golfing Society.
  *
  * A template to force full-width layout, remove breadcrumbs, and remove the page title.
  *
  * Template Name: Blocks
  *
- * @package Genesis Solent Roofing and Building
+ * @package Genesis Royal Navy Golfing Society
  * @author  StudioPress
  * @license GPL-2.0-or-later
  * @link    https://www.studiopress.com/

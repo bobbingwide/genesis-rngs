@@ -1,13 +1,13 @@
 <?php
 /**
- * Genesis Solent Roofing and Building child theme.
+ * Genesis Royal Navy Golfing Society child theme.
  *
  * Theme supports.
  *
- * @package Genesis Solent Roofing and Building
+ * @package Genesis Royal Navy Golfing Society
  * @author  StudioPress
  * @license GPL-2.0-or-later
- * @link    https://my.studiopress.com/themes/genesis-srab/
+ * @link    https://my.studiopress.com/themes/genesis-rngs/
  */
 
 return array(
@@ -33,7 +33,7 @@ return array(
 	'genesis-after-entry-widget-area' => '',
 	'genesis-footer-widgets'          => 3,
 	'genesis-menus'                   => array(
-		'primary'   => __( 'Header Menu', 'genesis-srab' ),
-		'secondary' => __( 'Footer Menu', 'genesis-srab' ),
+		'primary'   => __( 'Header Menu', 'genesis-rngs' ),
+		'secondary' => __( 'Footer Menu', 'genesis-rngs' ),
 	),
 );

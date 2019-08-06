@@ -1,10 +1,10 @@
 <?php
 /**
- * Genesis Solent Roofing and Building theme settings.
+ * Genesis Royal Navy Golfing Society theme settings.
  *
  * Genesis 2.9+ updates these settings when themes are activated.
  *
- * @package Genesis Solent Roofing and Building
+ * @package Genesis Royal Navy Golfing Society
  * @author  StudioPress
  * @license GPL-2.0-or-later
  * @link    https://www.studiopress.com/

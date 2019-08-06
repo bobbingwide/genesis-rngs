@@ -1,8 +1,8 @@
 <?php
 /**
- * Genesis Solent Roofing and Building Simple Social Icons default settings.
+ * Genesis Royal Navy Golfing Society Simple Social Icons default settings.
  *
- * @package Genesis Solent Roofing and Building
+ * @package Genesis Royal Navy Golfing Society
  * @author  StudioPress
  * @license GPL-2.0-or-later
  * @link    https://www.studiopress.com/

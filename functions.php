@@ -1,10 +1,10 @@
 <?php
 /**
- * Genesis Solent Roofing and Building.
+ * Genesis Royal Navy Golfing Society.
  *
- * This file adds functions to the Genesis Solent Roofing and Building Theme.
+ * This file adds functions to the Genesis Royal Navy Golfing Society Theme.
  *
- * @package Genesis Solent Roofing and Building
+ * @package Genesis Royal Navy Golfing Society
  * @author  BobbingWide
  * @license GPL-2.0-or-later
  * @link    https://www.studiopress.com/
@@ -16,13 +16,13 @@ require_once get_template_directory() . '/lib/init.php';
 // Sets up the Theme.
 require_once get_stylesheet_directory() . '/lib/theme-defaults.php';
 
-add_action( 'after_setup_theme', 'genesis_srab_localization_setup' );
+add_action( 'after_setup_theme', 'genesis_rngs_localization_setup' );
 /**
  * Sets localization (do not remove).
  *
  * @since 1.0.0
  */
-function genesis_srab_localization_setup() {
+function genesis_rngs_localization_setup() {
 
 	load_child_theme_textdomain( genesis_get_theme_handle(), get_stylesheet_directory() . '/languages' );
 
@@ -61,13 +61,13 @@ if ( function_exists( 'genesis_register_responsive_menus' ) ) {
 	genesis_register_responsive_menus( genesis_get_config( 'responsive-menus' ) );
 }
 
-add_action( 'wp_enqueue_scripts', 'genesis_srab_enqueue_scripts_styles' );
+add_action( 'wp_enqueue_scripts', 'genesis_rngs_enqueue_scripts_styles' );
 /**
  * Enqueues scripts and styles.
  *
  * @since 1.0.0
  */
-function genesis_srab_enqueue_scripts_styles() {
+function genesis_rngs_enqueue_scripts_styles() {
 
 	$appearance = genesis_get_config( 'appearance' );
 
@@ -91,8 +91,8 @@ function genesis_srab_enqueue_scripts_styles() {
 
 }
 
-add_action( 'after_setup_theme', 'genesis_srab_theme_support', 9 );
-add_action( 'after_setup_theme', 'genesis_srab_oik_clone_support' );
+add_action( 'after_setup_theme', 'genesis_rngs_theme_support', 9 );
+add_action( 'after_setup_theme', 'genesis_rngs_oik_clone_support' );
 /**
  * Add desired theme supports.
  *
@@ -100,7 +100,7 @@ add_action( 'after_setup_theme', 'genesis_srab_oik_clone_support' );
  *
  * @since 3.0.0
  */
-function genesis_srab_theme_support() {
+function genesis_rngs_theme_support() {
 
 	$theme_supports = genesis_get_config( 'theme-supports' );
 
@@ -109,7 +109,7 @@ function genesis_srab_theme_support() {
 	}
 }
 
-function genesis_srab_oik_clone_support() {
+function genesis_rngs_oik_clone_support() {
 	$feature = 'clone';
 	add_post_type_support( 'oik_testimonials', $feature );
 	add_post_type_support( 'post', $feature );
@@ -117,7 +117,7 @@ function genesis_srab_oik_clone_support() {
 	add_post_type_support( 'attachment', $feature );
 }
 
-add_filter( 'genesis_seo_title', 'genesis_srab_header_title', 10, 3 );
+add_filter( 'genesis_seo_title', 'genesis_rngs_header_title', 10, 3 );
 /**
  * Removes the link from the hidden site title if a custom logo is in use.
  *
@@ -131,7 +131,7 @@ add_filter( 'genesis_seo_title', 'genesis_srab_header_title', 10, 3 );
  * @param string $wrap   The wrapping element name, such as h1.
  * @return string The site title with anchor removed if a custom logo is active.
  */
-function genesis_srab_header_title( $title, $inside, $wrap ) {
+function genesis_rngs_header_title( $title, $inside, $wrap ) {
 
 	if ( has_custom_logo() ) {
 		$inside = get_bloginfo( 'name' );
@@ -155,7 +155,7 @@ genesis_unregister_layout( 'content-sidebar-sidebar' );
 genesis_unregister_layout( 'sidebar-content-sidebar' );
 genesis_unregister_layout( 'sidebar-sidebar-content' );
 
-add_filter( 'genesis_customizer_theme_settings_config', 'genesis_srab_remove_customizer_settings' );
+add_filter( 'genesis_customizer_theme_settings_config', 'genesis_rngs_remove_customizer_settings' );
 /**
  * Removes output of header and front page breadcrumb settings in the Customizer.
  *
@@ -164,7 +164,7 @@ add_filter( 'genesis_customizer_theme_settings_config', 'genesis_srab_remove_cus
  * @param array $config Original Customizer items.
  * @return array Filtered Customizer items.
  */
-function genesis_srab_remove_customizer_settings( $config ) {
+function genesis_rngs_remove_customizer_settings( $config ) {
 
 	unset( $config['genesis']['sections']['genesis_header'] );
 	unset( $config['genesis']['sections']['genesis_breadcrumbs']['controls']['breadcrumb_front_page'] );
@@ -183,7 +183,7 @@ add_action( 'genesis_header', 'genesis_do_nav', 12 );
 remove_action( 'genesis_after_header', 'genesis_do_subnav' );
 add_action( 'genesis_footer', 'genesis_do_subnav', 10 );
 
-add_filter( 'wp_nav_menu_args', 'genesis_srab_secondary_menu_args' );
+add_filter( 'wp_nav_menu_args', 'genesis_rngs_secondary_menu_args' );
 /**
  * Reduces secondary navigation menu to one level depth.
  *
@@ -192,7 +192,7 @@ add_filter( 'wp_nav_menu_args', 'genesis_srab_secondary_menu_args' );
  * @param array $args Original menu options.
  * @return array Menu options with depth set to 1.
  */
-function genesis_srab_secondary_menu_args( $args ) {
+function genesis_rngs_secondary_menu_args( $args ) {
 
 	if ( 'secondary' !== $args['theme_location'] ) {
 		return $args;
@@ -203,7 +203,7 @@ function genesis_srab_secondary_menu_args( $args ) {
 
 }
 
-add_filter( 'genesis_author_box_gravatar_size', 'genesis_srab_author_box_gravatar' );
+add_filter( 'genesis_author_box_gravatar_size', 'genesis_rngs_author_box_gravatar' );
 /**
  * Modifies size of the Gravatar in the author box.
  *
@@ -212,13 +212,13 @@ add_filter( 'genesis_author_box_gravatar_size', 'genesis_srab_author_box_gravata
  * @param int $size Original icon size.
  * @return int Modified icon size.
  */
-function genesis_srab_author_box_gravatar( $size ) {
+function genesis_rngs_author_box_gravatar( $size ) {
 
 	return 90;
 
 }
 
-add_filter( 'genesis_comment_list_args', 'genesis_srab_comments_gravatar' );
+add_filter( 'genesis_comment_list_args', 'genesis_rngs_comments_gravatar' );
 /**
  * Modifies size of the Gravatar in the entry comments.
  *
@@ -227,19 +227,19 @@ add_filter( 'genesis_comment_list_args', 'genesis_srab_comments_gravatar' );
  * @param array $args Gravatar settings.
  * @return array Gravatar settings with modified size.
  */
-function genesis_srab_comments_gravatar( $args ) {
+function genesis_rngs_comments_gravatar( $args ) {
 
 	$args['avatar_size'] = 60;
 	return $args;
 
 }
 
-add_filter( 'genesis_footer_creds_text', "genesis_srab_footer_creds_text" );
+add_filter( 'genesis_footer_creds_text', "genesis_rngs_footer_creds_text" );
 
 /**
  * Display footer credits for the genesis-hm theme
  */
-function genesis_srab_footer_creds_text( $text ) {
+function genesis_rngs_footer_creds_text( $text ) {
 	do_action( "oik_add_shortcodes" );
 	$text = "[bw_wpadmin]";
 	$text .= '<br />';

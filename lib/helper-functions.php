@@ -1,10 +1,10 @@
 <?php
 /**
- * Genesis Solent Roofing and Building.
+ * Genesis Royal Navy Golfing Society.
  *
- * This file adds the required helper functions used in the Genesis Solent Roofing and Building Theme.
+ * This file adds the required helper functions used in the Genesis Royal Navy Golfing Society Theme.
  *
- * @package Genesis Solent Roofing and Building
+ * @package Genesis Royal Navy Golfing Society
  * @author  StudioPress
  * @license GPL-2.0-or-later
  * @link    https://www.studiopress.com/
@@ -18,7 +18,7 @@
  * @param string $color A color in hex format.
  * @return string The hex code for the most contrasting color: dark grey or white.
  */
-function genesis_srab_color_contrast( $color ) {
+function genesis_rngs_color_contrast( $color ) {
 
 	$hexcolor = str_replace( '#', '', $color );
 	$red      = hexdec( substr( $hexcolor, 0, 2 ) );
@@ -41,7 +41,7 @@ function genesis_srab_color_contrast( $color ) {
  * @param int    $change The amount to reduce or increase brightness by.
  * @return string Hex code for the adjusted color brightness.
  */
-function genesis_srab_color_brightness( $color, $change ) {
+function genesis_rngs_color_brightness( $color, $change ) {
 
 	$hexcolor = str_replace( '#', '', $color );
 
