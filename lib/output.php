@@ -104,6 +104,7 @@ function genesis_rngs_css() {
 		'
 	: '';
 
+	/*
 	$css .= ( has_custom_logo() && ( 350 !== $logo_max_width ) ) ? sprintf(
 		'
 		.wp-custom-logo .site-container .title-area {
@@ -112,6 +113,7 @@ function genesis_rngs_css() {
 		',
 		$logo_max_width
 	) : '';
+	*/
 
 	// Place menu below logo and center logo once it gets big.
 	$css .= ( has_custom_logo() && ( 600 <= $logo_max_width ) ) ?
