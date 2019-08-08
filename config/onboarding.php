@@ -18,21 +18,7 @@ return array(
 				'slug'       => 'atomic-blocks/atomicblocks.php',
 				'public_url' => 'https://atomicblocks.com/',
 			),
-			array(
-				'name'       => __( 'Simple Social Icons', 'genesis-rngs' ),
-				'slug'       => 'simple-social-icons/simple-social-icons.php',
-				'public_url' => 'https://wordpress.org/plugins/simple-social-icons/',
-			),
-			array(
-				'name'       => __( 'Genesis eNews Extended (Third Party)', 'genesis-rngs' ),
-				'slug'       => 'genesis-enews-extended/plugin.php',
-				'public_url' => 'https://wordpress.org/plugins/genesis-enews-extended/',
-			),
-			array(
-				'name'       => __( 'WPForms Lite (Third Party)', 'genesis-rngs' ),
-				'slug'       => 'wpforms-lite/wpforms.php',
-				'public_url' => 'https://wordpress.org/plugins/wpforms-lite/',
-			),
+
 		),
 	),
 	'content'          => array(
