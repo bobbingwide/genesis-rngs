@@ -244,7 +244,7 @@ function genesis_rngs_footer_creds_text( $text ) {
 	$text = "[bw_wpadmin]";
 	$text .= '<br />';
 	$text .= "[bw_copyright]";
-	$text .= '<hr />';
+	//$text .= '<hr />';
 	//$text .= 'Website designed and developed by [bw_link text="Herb Miller" herbmiller.me] of';
 	//$text .= ' <a href="//www.bobbingwide.com" title="Bobbing Wide - web design, web development">[bw]</a>';
 	//$text .= '<br />';
