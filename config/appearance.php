@@ -9,8 +9,8 @@
  */
 
 $genesis_rngs_default_colors = array(
-	'link'   => '#5f5d89',
-	'accent' => '#0073e5',
+	'link'   => '#76b93c',
+	'accent' => '#adc85b',
 );
 
 $genesis_rngs_link_color = get_theme_mod(
