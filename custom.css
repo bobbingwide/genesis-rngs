@@ -38,7 +38,13 @@ div.news div { background: #ffffff; padding: 5px 0 0 5px; margin-bottom: 2px; }
 .art-postcontent a:visited, .art-postcontent a.visited { color: #76B93C; }
 .art-postcontent a:hover, .art-postcontent a:hover { color: #355430; }
 
-.footer-widgets {
-    background: url(images/striped-header.jpg) no-repeat right top;
+.site-footer {
+     background: url(images/striped-header.jpg) no-repeat right top;
     background-size: cover;
+    color: #ffffff;
+}
+.site-footer a { color: #76B93C; }
+
+td.title {
+    max-width: 250px;
 }
