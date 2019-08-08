@@ -34,7 +34,7 @@ Implemented on rngs.org.uk
 ## Change Log 
 # 0.0.1 
 * Added: Based on genesis-srab
-* Changed: Colours
+* Changed: Colours and look and feel
 * Added: Logic copied from the original theme
 
 ## Copyright 

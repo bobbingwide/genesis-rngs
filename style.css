@@ -1474,6 +1474,7 @@ p.entry-meta {
 /* Media Queries
 ---------------------------------------------------------------------------- */
 
+
 @media only screen and (min-width: 480px) {
 
 	table {
@@ -1503,7 +1504,7 @@ p.entry-meta {
 	}
 
 	.wp-custom-logo .title-area {
-		width: 50%;
+		/* width: 65%; */
 	}
 
 	/* Genesis Menu
@@ -1729,6 +1730,11 @@ p.entry-meta {
 		width: calc(100% / 3);
 	}
 
+}
+@media only screen and ( min-width: 1600px) {
+	.wp-custom-logo .title-area {
+		width: 50%;
+	}
 }
 
 /* Print Styles
