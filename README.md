@@ -3,9 +3,9 @@
 * Contributors: bobbingwide
 * Donate link: http://www.oik-plugins.com/oik/oik-donate/
 * Tags: genesis, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments
-* Requires at least: 5.5.2
-* Tested up to: 5.5.2
-* Version: 0.0.1
+* Requires at least: 5.2.2
+* Tested up to: 5.2.2
+* Version: 0.0.2
 * License: GPLv2 or later
 * License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,6 +32,10 @@ Implemented on rngs.org.uk
 7. Optionally, install and activate a range of oik-based plugins.
 
 ## Change Log 
+# 0.0.2
+* Changed: Improve responsive header,https://github.com/bobbingwide/genesis-rngs/issues/1
+* Fixed: Avoid Notice when Match Manager value invalid,https://github.com/bobbingwide/genesis-rngs/issues/2
+
 # 0.0.1 
 * Added: Based on genesis-srab
 * Changed: Colours and look and feel
