@@ -1002,7 +1002,7 @@ img.alignright,
 	/* max-width: 350px; */
 	padding-bottom: 5px;
 	padding-top: 5px;
-	width: 50%;
+	width: 100%;
 }
 
 .wp-custom-logo .title-area img {
@@ -1012,10 +1012,12 @@ img.alignright,
 }
 
 .site-title {
-	font-size: 40px;
+
 	font-weight: 600;
 	line-height: 1;
-	margin: 20px 0 0 0;
+	padding: 20px 0 0 0;
+	font-size: 4vw;
+	clear: both;
 }
 
 .site-title a,
@@ -1484,6 +1486,10 @@ p.entry-meta {
 	.wp-custom-logo .title-area {
 		width: 100%;
 	}
+	.site-title {
+		clear: both;
+		font-size: 4vw;
+	}
 
 }
 
@@ -1504,7 +1510,12 @@ p.entry-meta {
 	}
 
 	.wp-custom-logo .title-area {
-		/* width: 65%; */
+		 /* width: 50%; */
+	}
+
+	.site-title {
+		clear:none;
+		font-size: 3vw;
 	}
 
 	/* Genesis Menu
@@ -1731,9 +1742,13 @@ p.entry-meta {
 	}
 
 }
-@media only screen and ( min-width: 1600px) {
+@media only screen and ( min-width: 1480px) {
 	.wp-custom-logo .title-area {
 		width: 50%;
+	}
+	.site-title {
+		font-size: 40px;
+		clear: none;
 	}
 }
 
