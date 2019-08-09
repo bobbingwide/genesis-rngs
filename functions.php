@@ -464,17 +464,21 @@ function bw_theme_field_userref__match_manager( $key, $value, $field  ) {
 	$id = bw_array_get( $value, 0, $value );
 	if ( $id ) {
 		$user = bw_get_user( $id );
-		// bw_trace2( $user, "user" );
-		$first_name = get_the_author_meta( "first_name", $id );
-		$last_name = get_the_author_meta( "last_name", $id );
-		$email = "$first_name $last_name";
-		if ( is_user_logged_in() ) {
-			oik_require( "shortcodes/oik-email.php" );
-			$email_link = _bw_mailto_link( $user->user_email, array( "subject" => "y" ) );
-			alink( null, $email_link, $email, esc_attr( $email ) );
+		if ( $user ) {
+			// bw_trace2( $user, "user" );
+			$first_name = get_the_author_meta( "first_name", $id );
+			$last_name  = get_the_author_meta( "last_name", $id );
+			$email      = "$first_name $last_name";
+			if ( is_user_logged_in() ) {
+				oik_require( "shortcodes/oik-email.php" );
+				$email_link = _bw_mailto_link( $user->user_email, array( "subject" => "y" ) );
+				alink( null, $email_link, $email, esc_attr( $email ) );
+			} else {
+				e( $email );
+			}
 		} else {
-			e( $email );
-		}
+		    e( "");
+        }
 	}
 }
 
