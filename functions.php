@@ -234,7 +234,7 @@ function genesis_rngs_comments_gravatar( $args ) {
 
 }
 
-add_filter( 'genesis_footer_creds_text', "genesis_rngs_footer_creds_text" );
+add_filter( 'genesis_pre_get_option_footer_text', "genesis_rngs_footer_creds_text" );
 
 /**
  * Display footer credits for the genesis-hm theme

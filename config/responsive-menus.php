@@ -14,7 +14,7 @@
 return array(
 	'script' => array(
 		'menuClasses' => array(
-			'others' => array( '.nav-primary' ),
+			'others' => array( '.nav-header' ),
 		),
 	),
 	'extras' => array(
